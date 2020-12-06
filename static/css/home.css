@@ -1,0 +1,330 @@
+.hero-banner h1 {
+    text-transform: uppercase;
+    color: #6059f6;
+    margin-bottom: 15px
+}
+
+@media (max-width:1200px) {
+    .hero-banner h1 {
+        font-size: 40px
+    }
+}
+
+@media (max-width:991px) {
+    .hero-banner h1 {
+        font-size: 30px
+    }
+}
+
+.hero-banner-sm {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    padding-top: 140px;
+    padding-bottom: 90px
+}
+
+@media (min-width:992px) {
+    .hero-banner-sm {
+        padding-top: 240px;
+        padding-bottom: 122px
+    }
+}
+
+.hero-banner-sm h1 {
+    text-transform: uppercase;
+    color: #6059f6
+}
+
+@media (max-width:991px) {
+    .hero-banner-sm h1 {
+        font-size: 38px
+    }
+}
+
+@media (max-width:768px) {
+    .hero-banner-sm h1 {
+        font-size: 28px
+    }
+}
+
+.hero-banner-sm p {
+    margin-bottom: 0
+}
+
+.hero-banner-sm-content {
+    max-width: 400px
+}
+
+.button-hero {
+    font-weight: 500
+}
+
+.section-intro {
+    max-width: 640px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.section-intro p {
+    margin-bottom: 0
+}
+
+.section-intro-img {
+    margin-bottom: 10px
+}
+
+
+.service-card {
+    background: #f8f8ff;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s
+}
+
+.service-card:hover {
+    background: #fff
+}
+
+.service-card-img {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    max-height: 260px
+}
+
+@media (max-width:600px) {
+    .service-card-img {
+        padding-top: 20px;
+        padding: 10px
+    }
+}
+
+.service-card-body {
+    padding: 10px 30px 40px 30px
+}
+
+.service-card-body h3 {
+    margin-bottom: 8px
+}
+
+@media (min-width:768px) {
+    .service-card-body h3 {
+        margin-bottom: 15px
+    }
+}
+
+.section-margin {
+    margin: 65px 0;
+}
+
+@media (min-width:992px) {
+    .section-margin {
+        margin: 130px 0;
+    }
+}
+
+.section-margin-large {
+    margin: 65px 0;
+}
+
+@media (min-width:992px) {
+    .section-margin-large {
+        margin: 140px 0;
+    }
+}
+
+.tour-card {
+    position: relative;
+    margin-bottom: 10px
+}
+
+.tour_price {
+    color: #007bff
+}
+
+.tour-card .tour-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 40px;
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(40px);
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s
+}
+
+.tour-card .tour-card-overlay h4 {
+    margin-bottom: 0
+}
+
+.tour-card .tour-card-overlay small {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px
+}
+
+.tour-card .tour-card-overlay p {
+    font-size: 16px
+}
+
+.tour-card:hover .tour-card-overlay {
+    transform: translateY(0);
+    width: 100%;
+    opacity: 1;
+    z-index: 1
+}
+
+@media (min-width:1200px) {
+    .tour-card:hover .tour-card-overlay {
+        width: 74%
+    }
+}
+
+.tour-content {
+    padding: 8px 20px 25px 15px
+}
+
+.tour-content h2 {
+    margin-bottom: 15px
+}
+
+.search-wrapper {
+    background: #f8f8ff;
+    padding: 30px 10px;
+    text-align: center
+}
+
+@media (min-width:600px) {
+    .search-wrapper {
+        padding: 60px
+    }
+}
+
+.search-wrapper h3 {
+    font-size: 25px;
+    margin-bottom: 25px
+}
+
+@media (min-width:600px) {
+    .search-wrapper h3 {
+        margin-bottom: 50px
+    }
+}
+
+/* Contact */
+
+.search-content h2 {
+    margin-bottom: 10px
+}
+
+@media (min-width:768px) {
+    .search-content h2 {
+        margin-bottom: 20px
+    }
+}
+
+.search-content p {
+    margin-bottom: 25px
+}
+
+@media (min-width:768px) {
+    .search-content p {
+        margin-bottom: 40px
+    }
+}
+
+.contact-info {
+    margin-bottom: 12px
+}
+
+.contact-info__icon {
+    margin-right: 20px
+}
+
+.contact-info__icon i,
+.contact-info__icon span {
+    color: #8f9195;
+    font-size: 27px
+}
+
+.contact-info .media-body h3 {
+    font-size: 16px;
+    margin-bottom: 0
+}
+
+.contact-info .media-body h3 a {
+    color: #2a2a2a
+}
+
+.contact-info .media-body p {
+    color: #999
+}
+
+.contact-title {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 20px
+}
+
+.wpcf7 .form-group {
+    margin-bottom: 20px
+}
+
+
+.wpcf7-form label {
+    color: #6059f6;
+    font-size: 14px
+}
+
+.wpcf7-form .form-group {
+    margin-bottom: 30px
+}
+
+.wpcf7-form .form-control {
+    border-radius: 5px;
+    height: 50px;
+    padding-left: 18px;
+    font-size: 13px;
+    background: 0 0;
+    border: 1px solid #f0e9ff
+}
+
+.wpcf7-form .form-control:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+.wpcf7-form .form-control::placeholder {
+    font-weight: 300;
+    color: #999
+}
+
+.wpcf7-form textarea {
+    border-radius: 12px;
+    height: 100% !important
+}
+
+.wpcf7 .form-group {
+    margin-bottom: 20px
+}
+
+.section-intro {
+    max-width: 640px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.section-intro p { 
+    margin-bottom: 0
+}
+
+.section-intro-img {
+    margin-bottom: 10px
+}
+

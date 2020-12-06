@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block title %}
+    <title>Safario - Contact</title>
+    {% endblock title %} 
+</head>
+{% block content %}
+    <link rel="stylesheet" href="static/css/contact.css">
+    <!-- Contact-form -->
+    <div class="banner" style="background-image: url('static/img/Contact-Us/main.jpg')">
+        <div class="wrapper">
+            <div class="banner__text">
+                <div class="banner__text-wrap">
+                    <a href="\">Home</a>
+                </div>
+                <h3 class="banner__text-title">Contact Us</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="wrapper">
+            <div class="section-head">
+                <h2 class="section-head__title"><span>Contact</span> Information</h2>
+            </div>
+            <div class="contact__info">
+                <div class="row">
+                    <div class="contact__info-item col-lg-3 col-md-6">
+                        <p>Address: 198 West 21th Street,<br>Suite 721 New York NY 10016</p>
+                    </div>
+                    <div class="contact__info-item col-lg-3 col-md-6">
+                        <p>Phone: <a href="tel:+ 1235 2355 98">+ 1235 2355 98</a></p>
+                    </div>
+                    <div class="contact__info-item col-lg-3 col-md-6">
+                        <p>Email: <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                    </div>
+                    <div class="contact__info-item col-lg-3 col-md-6">
+                        <p>Website: <a href="javascript:;"></a>yoursite.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="contact__form" action="">
+                        <div class="contact__form-field">
+                            <label for="name" class="sr-only">Name</label>
+                            <input id="name" type="text" placeholder="Name">
+                        </div>
+                        <div class="contact__form-field">
+                            <label for="email" class="sr-only">Email</label>
+                            <input id="email" type="email" placeholder="Email">
+                        </div>
+                        <div class="contact__form-field">
+                            <label for="subject" class="sr-only">Subject</label>
+                            <input id="subject" type="text" placeholder="Subject">
+                        </div>
+                        <div class="contact__form-field">
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea id="message" placeholder="Message"></textarea>
+                        </div>
+                        <button class="btn btn--fill">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <img src="static/img/Contact-Us/map.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+</html>

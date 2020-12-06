@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block title %}
+    <title>Safario - About</title>
+    {% endblock title %}   
+</head>
+<!-- add myloader to all body tags of templates -->
+{% block content %}
+    <link rel="stylesheet" href="static/css/about.css">
+    <section class="section-margin generic-margin">
+        <div class="container">
+            <div class="section-intro text-center pb-85px">
+                <img class="section-intro-img" src="static/img/about/lightbulb.png" alt="">
+                <h2>Why Book With us?</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="service-card text-center">
+                        <div class="service-card-img">
+                            <img class="img-fluid" src="static/img/about/coverage.png" alt="">
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Worldwide Coverage</h3>
+                            <p>No matter where in the world you want the go, we got you covered. From flights and
+                                hotels, to rental cars and attraction tickets, our extensive network connects all
+                                corners of the globe.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="service-card text-center">
+                        <div class="service-card-img">
+                            <img class="img-fluid" src="static/img/about/pricing.png" alt="">
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Competitive Pricing</h3>
+                            <p>Giving up on your ideal travel location due to financial reasons? We deliver competitive
+                                prices, saving you more on travel everyday. Register as a member to receive even bigger
+                                discounts!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <div class="service-card text-center">
+                        <div class="service-card-img">
+                            <img class="img-fluid" src="static/img/about/shield.png" alt="">
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Security</h3>
+                            <p>Data security is our top priority. Whether you're paying by credit card or via one of the
+                                multiple third party payment options available, your payment data will always be
+                                protected.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero-banner magic-ball">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-left">
+                <div class="col-md-6 col-lg-5 mb-5 mb-md-0">
+                    <h1>The world is yours to Explore!</h1>
+                    <p>“I’M IN LOVE WITH CITIES I’VE NEVER BEEN TO AND PEOPLE I’VE NEVER MET.” ~ JOHN GREEN</p>
+                    <a class="button button-hero mt-4" href="package.html">Get Started</a>
+                </div>
+                <div class="col-md-6 col-lg-7 col-xl-6 offset-xl-1">
+                    <img class="img-fluid" src="static/img/about/explore.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- content -->
+{% endblock content %}
+</html>

@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block title %}
+    <title>Safario - Package</title>
+    {% endblock title %}
+</head>
+
+{% block content %}
+    <link rel="stylesheet" href="static/css/package.css">
+    <section class="section-margin generic-margin mt-5">
+        <div class="container">
+            <div class="section-intro text-center pb-85px">
+                <img class="section-intro-img" src="static/img/packages/packages.png" alt="">
+                <h2>Packages</h2>
+            </div>
+            <div class="row">
+                 <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                    <div class="card" onclick="openForm()" style="width: 20rem;">
+                        <img class="card-img-top" src="static/img/packages/honeymoon.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h3>Honeymoon</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                    <div class="card" onclick="openForm()" style="width: 20rem;">
+                        <img class="card-img-top" src="static/img/packages/family.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h3>Family Vacation</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                    <div class="card" onclick="openForm()" style="width: 20rem;">
+                        <img class="card-img-top" src="static/img/packages/weekend.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h3>Weekend Getaway</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                    <div class="card" onclick="openForm()" style="width: 20rem;">
+                        <img class="card-img-top" src="static/img/packages/business.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h3>Business Meet</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                    <div class="card" onclick="openForm()" style="width: 20rem;">
+                        <img class="card-img-top" src="static/img/packages/group.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h3>Group Travel</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                    <div class="card" onclick="openForm()" style="width: 20rem;">
+                        <img class="card-img-top" src="static/img/packages/worldtour.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h3>Around the World</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-margin generic-margin mt-5">
+        <div class="container">
+            <div class="section-intro text-center pb-85px">
+                <img class="section-intro-img" src="static/img/packages/destinations.png" alt="">
+                <h2>Destinations</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                    <div class="card" onclick="openForm()" style="width: 20rem;">
+                        <img class="card-img-top" src="static/img/packages/paris.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h3>Paris</h3>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                    <div class="card" onclick="openForm()" style="width: 20rem;">
+						<img class="card-img-top" src="static/img/packages/tokyo.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h3>Tokyo</h3>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                    <div class="card" onclick="openForm()" style="width: 20rem;">
+						<img class="card-img-top" src="static/img/packages/prague.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h3>Prague</h3>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                    <div class="card" onclick="openForm()" style="width: 20rem;">
+                        <img class="card-img-top" src="static/img/packages/los_angeles.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h3>Los Angeles</h3>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                    <div class="card" onclick="openForm()" style="width: 20rem;">
+                       <img class="card-img-top" src="static/img/packages/cyprus.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h3>Cyprus</h3>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                    <div class="card" onclick="openForm()" style="width: 20rem;">
+                        <img class="card-img-top" src="static/img/packages/italy.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h3>Venice</h3>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="form-popup" id="myForm">
+  		<form action="" class="form-container">
+    		<h1>Tell us more</h1>
+
+    		<label for="name"><b>Name</b></label>
+    		<input type="text" placeholder="Enter Name" name="name" required>
+
+    		<label for="package"><b>Package</b></label><br>
+    		<select name="package" id="package" required>
+    			<option value="">Choose package</option>
+    			<option value="Honeymoon">Honeymoon</option>
+    			<option value="Family Vacation">Family Vacation</option>
+    			<option value="Weekend Getaway">Weekend Getaway</option>
+    			<option value="Business Meet">Business Meet</option>
+    			<option value="Group Travel">Group Travel</option>
+    			<option value="Around the World">Around the World</option>
+  			</select>
+
+  			<br><br>
+
+    		<label for="destination"><b>Destination</b></label><br>
+    		<select name="destination" id="destination" required>
+    			<option value="">Pick your destination</option>
+    			<option value="Paris">Paris</option>
+    			<option value="Tokyo">Tokyo</option>
+    			<option value="Prague">Prague</option>
+    			<option value="Los Angeles">Los Angeles</option>
+    			<option value="Cyprus">Cyprus</option>
+    			<option value="Venice">Venice</option>
+  			</select>
+
+  			<br><br>
+
+  			<label for="contact"><b>Contact number</b></label>
+    		<input type="text" placeholder="Enter contact number" name="contact" required>
+
+    		<button type="submit" class="submit_btn" onclick="popup()">Submit</button>
+    		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  		</form>
+	</div>
+
+	<script>
+		function openForm() {
+  			document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+  			document.getElementById("myForm").style.display = "none";
+		}
+
+		function popup() {
+  			alert("Thank you❤\nWe'll get in touch with you soon.");
+		}
+	</script>
+{% endblock content %}
+</html>

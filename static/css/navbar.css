@@ -1,0 +1,11 @@
+.navbar {
+  z-index: 9999;
+}
+
+.current {
+  color: blueviolet;
+}
+
+.words:hover {
+  color: blueviolet;
+}

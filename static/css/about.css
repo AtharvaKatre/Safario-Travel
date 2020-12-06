@@ -1,0 +1,146 @@
+.section-margin {
+    margin: 65px 0;
+}
+
+@media (min-width:992px) {
+    .section-margin {
+        margin: 130px 0;
+    }
+}
+
+.section-margin-large {
+    margin: 65px 0;
+}
+
+@media (min-width:992px) {
+    .section-margin-large {
+        margin: 140px 0;
+    }
+}
+
+.generic-margin {
+    margin-top: 70px
+}
+
+@media (max-width:991px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+}
+
+.section-intro {
+    max-width: 640px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.section-intro p {
+    margin-bottom: 0
+}
+
+.section-intro-img {
+    margin-bottom: 10px
+}
+
+.service-card {
+    background: #f8f8ff;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s
+}
+
+.service-card:hover {
+    background: #fff
+}
+
+.service-card-img {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    max-height: 260px
+}
+
+@media (max-width:600px) {
+    .service-card-img {
+        padding-top: 20px;
+        padding: 10px
+    }
+}
+
+.service-card-body {
+    padding: 10px 30px 40px 30px
+}
+
+.service-card-body h3 {
+    margin-bottom: 8px
+}
+
+@media (min-width:768px) {
+    .service-card-body h3 {
+        margin-bottom: 15px
+    }
+}
+
+.hero-banner h1 {
+    text-transform: uppercase;
+    color: #6059f6;
+    margin-bottom: 15px
+}
+
+@media (max-width:1200px) {
+    .hero-banner h1 {
+        font-size: 40px
+    }
+}
+
+@media (max-width:991px) {
+    .hero-banner h1 {
+        font-size: 30px
+    }
+}
+
+.hero-banner-sm {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    padding-top: 140px;
+    padding-bottom: 90px
+}
+
+@media (min-width:992px) {
+    .hero-banner-sm {
+        padding-top: 240px;
+        padding-bottom: 122px
+    }
+}
+
+.hero-banner-sm h1 {
+    text-transform: uppercase;
+    color: #6059f6
+}
+
+@media (max-width:991px) {
+    .hero-banner-sm h1 {
+        font-size: 38px
+    }
+}
+
+@media (max-width:768px) {
+    .hero-banner-sm h1 {
+        font-size: 28px
+    }
+}
+
+.hero-banner-sm p {
+    margin-bottom: 0
+}
+
+.hero-banner-sm-content {
+    max-width: 400px
+}
+
+.button-hero {
+    font-weight: 500
+}
+

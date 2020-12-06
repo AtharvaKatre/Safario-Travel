@@ -1,0 +1,50 @@
+.banner {
+    /* background-image: url("img/Contact-Us/main.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 650px;
+    position: relative;
+}
+
+.banner__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1199px) {
+    .banner__text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.banner__text-title {
+    font-size: 60px;
+    line-height: 1.2;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+    .banner__text-title {
+        font-size: 50px;
+    }
+}
+
+.banner__wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
