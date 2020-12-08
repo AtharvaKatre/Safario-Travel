@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% block content %}
+<link rel="stylesheet" href="static/css/banner.css">
+<link rel="stylesheet" href="static/css/form.css">
+    <div class="banner" style="background-image: url('static/img/packages/prague.jpg')">
+        <div class="wrapper">
+            <div class="banner__text">
+                <h3 class="banner__text-title">Prague</h3>
+                <div class="col text-center">
+                    <button onClick=openForm() class="btn btn-default">Book Now!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="section-margin generic-margin mt-5">
+        <div class="container">
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="static/img/packages/places/Charles Bridge.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Charles Bridge</h5>
+                        <p class="card-text">Named after King Charles IV, the length of the bridge contains 30
+                            Baroque-style sculptures of saints. Running over the Vltava River, it connects the Staré
+                            Město (Old Town) with the Malá Strana (Little Quarter) of Prague. Here, the defensive Gothic
+                            towers at both ends of the bridge are essential structures in the city’s skyline. You can
+                            climb up the towers for a panoramic lookout of the city!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="static/img/packages/places/Vltava River.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Vltava River </h5>
+                        <p class="card-text">It looks just as magical from the water! After all, Prague is situated on
+                            the banks of the Vltava River. And what better way to experience this riverside capital than
+                            to sail through its most historic sights?
+
+                            Floating on a cruise along the Czech Republic’s longest river lets you see the bridges and
+                            red-roofed houses of Prague from a different perspective. This way, you won’t have to
+                            compete with the crowds for good photos of the attractions, too! </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="static/img/packages/places/Astronomical Clock.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Prague Astronomical Clock </h5>
+                        <p class="card-text">Every day from 9am to 11pm, the Prague Astronomical Clock attracts tourists
+                            who want to watch the “Walk of the Apostles.” When the clock chimes at the hour, the
+                            mechanical figurines of the 12 Apostles move in the tower’s window. To beat the crowds, we
+                            recommend arriving at the Old Town Square at least fifteen minutes before the hour starts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="static/img/packages/places/Old Town Square.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Old Town Square</h5>
+                        <p class="card-text">Fancy a leisurely stroll through Prague? Head to the Old Town or Staré
+                            Město for one of the most picturesque squares in Europe! At the Old Town Square, the winding
+                            cobblestone streets and imposing Gothic spires make the perfect spot for appreciating the
+                            medieval atmosphere of Prague.
+
+                            Situated between Charles Bridge and Wenceslas Square, the Old Town Square was once a
+                            bustling marketplace in Prague until the 20th century. Now, it’s a UNESCO-listed
+                            destination.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="static/img/packages/places/Prague Castle.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Prague Castle</h5>
+                        <p class="card-text">Prague Castle isn’t just limited to a single monument. Rather, the entire
+                            complex of the castle comprises vast courtyards, cathedrals, museums, and sprawling gardens
+                            that can take several days to explore fully. Covering nearly 70,000 square metres, Prague
+                            Castle is officially listed in the Guinness Book of World Records as the largest ancient
+                            castle complex in the world.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="static/img/packages/places/Museums and art galleries.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Museums and art galleries</h5>
+                        <p class="card-text">Prague is also known for its thriving arts and cultural scene. So, if you
+                            have a knack for exploring art galleries, then you’re in the right place to be! From natural
+                            history exhibits to vast collections of European paintings, the museums of Prague have
+                            treasures for every traveller.
+
+                            Check out the National Museum on Wenceslas Square for over 14 million historical artifacts
+                            that include jewellery, sculptures, and other timeless treasures. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="form-popup" id="myForm">
+  		<form action="" class="form-container">
+    		<h1>Tell us more</h1>
+
+    		<label for="name"><b>Name</b></label>
+    		<input type="text" placeholder="Enter Name" name="name" required>
+
+    		<label for="package"><b>Package</b></label><br>
+    		<select name="package" id="package" required>
+    			<option value="">Choose package</option>
+    			<option value="Honeymoon">Honeymoon</option>
+    			<option value="Family Vacation">Family Vacation</option>
+    			<option value="Weekend Getaway">Weekend Getaway</option>
+    			<option value="Business Meet">Business Meet</option>
+    			<option value="Group Travel">Group Travel</option>
+    			<option value="Around the World">Around the World</option>
+  			</select>
+
+  			<br><br>
+
+    		<label for="destination"><b>Destination</b></label><br>
+    		<select name="destination" id="destination" required>
+    			<option value="">Pick your destination</option>
+    			<option value="Paris">Paris</option>
+    			<option value="Tokyo">Tokyo</option>
+    			<option value="Prague">Prague</option>
+    			<option value="Los Angeles">Los Angeles</option>
+    			<option value="Cyprus">Cyprus</option>
+    			<option value="Venice">Venice</option>
+  			</select>
+
+  			<br><br>
+
+  			<label for="contact"><b>Contact number</b></label>
+    		<input type="text" placeholder="Enter contact number" name="contact" required>
+
+    		<button type="submit" class="submit_btn" onclick="popup()">Submit</button>
+    		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  		</form>
+	</div>
+
+	<script>
+		function openForm() {
+  			document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+  			document.getElementById("myForm").style.display = "none";
+		}
+
+		function popup() {
+  			alert("Thank you❤\nWe'll get in touch with you soon.");
+		}
+	</script>
+{% endblock content %}
+
+</html>

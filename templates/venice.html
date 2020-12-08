@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% block content %}
+
+<link rel="stylesheet" href="static/css/banner.css">
+<link rel="stylesheet" href="static/css/form.css">
+    <div class="banner" style="background-image: url('static/img/packages/italy.jpg')">
+        <div class="wrapper">
+            <div class="banner__text">
+                <h3 class="banner__text-title">Venice</h3>
+                <div class="col text-center">
+                    <button onClick=openForm() class="btn btn-default" >Book Now!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section-margin generic-margin mt-5">
+        <div class="container">
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="static/img/packages/places/Colosseum.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Colosseum</h5>
+                        <p class="card-text">This huge amphitheater, the largest of its kind ever built by the Roman
+                            Empire and the largest of their constructions to survive, remained a model for sports
+                            facilities right up to modern times. Built by Vespasian in AD 72 and enlarged by the
+                            addition of a fourth story by his son, Titus, it was a venue for public spectacles and shows
+                            - even mock sea battles.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="static/img/packages/places/Florence_Duomo_Santa_Maria_del_Fiore.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Florence Duomo Santa Maria del Fiore</h5>
+                        <p class="card-text">Regarded as one of the finest cathedrals in the world, the Duomo Santa
+                            Maria del Fiore, or the Cathedral of Santa Maria del Fiore, dominates the Florence skyline.
+                            The cathedral was built between the 13th and 15th centuries, with the most famous piece
+                            being the extraordinary dome, completed by Filippo Brunelleschi in 1434.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="static/img/packages/places/Grand_Canal_venice.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Grand Canal in Venice</h5>
+                        <p class="card-text">The Grand Canal is the largest and most famous of these waterways, cutting
+                            a wide S-shaped route through the city. Along its sides are the grandest of the palaces once
+                            owned by the wealthiest and most powerful families of the Venetian Republic. The best way to
+                            see palaces, whose fronts face the water, is from a Vaporetto ride along
+                            the Grand Canal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="static/img/packages/places/Pompeii_and_Mount_Vesuvius.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pompeii and Mount Vesuvius</h5>
+                        <p class="card-text">The still smoking volcano of Mt. Vesuvius looks down on the remains of the
+                            city it destroyed in AD 79. But that same eruption also preserved many of the city's art
+                            treasures: frescoes, mosaics, and sculptures that were encased in the lava as it cooled.
+                            Several centuries of excavations have revealed the remains of houses, markets, baths,
+                            temples, theaters, streets. </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="static/img/packages/places/Leaning_Tower_of_Pisa.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Leaning Tower of Pisa</h5>
+                        <p class="card-text">The Leaning Tower of Pisa (La Torre Pendente) is just one of many
+                            attractions in the city of Pisa, one whose world fame comes not from the considerable
+                            elegance of its design, but from a flaw. Work began on the tower in the 1100s, and the
+                            sinking, which led to the lean, began by the time the tower reached the third story.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="static/img/packages/places/Cinque_Terre.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cinque Terre</h5>
+                        <p class="card-text">Cinque Terre is a lovely coastal region with steep hills and sheer cliffs
+                            overlooking the Mediterranean. The five picturesque villages of Monterosso al Mare,
+                            Vernazza, Corniglia, Manarola, and Riomaggiore can be reached by several means, joined to
+                            each other by walking paths, a railroad that tunnels through the headlands to emerge at each
+                            town.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="form-popup" id="myForm">
+  		<form action="" class="form-container">
+    		<h1>Tell us more</h1>
+
+    		<label for="name"><b>Name</b></label>
+    		<input type="text" placeholder="Enter Name" name="name" required>
+
+    		<label for="package"><b>Package</b></label><br>
+    		<select name="package" id="package" required>
+    			<option value="">Choose package</option>
+    			<option value="Honeymoon">Honeymoon</option>
+    			<option value="Family Vacation">Family Vacation</option>
+    			<option value="Weekend Getaway">Weekend Getaway</option>
+    			<option value="Business Meet">Business Meet</option>
+    			<option value="Group Travel">Group Travel</option>
+    			<option value="Around the World">Around the World</option>
+  			</select>
+
+  			<br><br>
+
+    		<label for="destination"><b>Destination</b></label><br>
+    		<select name="destination" id="destination" required>
+    			<option value="">Pick your destination</option>
+    			<option value="Paris">Paris</option>
+    			<option value="Tokyo">Tokyo</option>
+    			<option value="Prague">Prague</option>
+    			<option value="Los Angeles">Los Angeles</option>
+    			<option value="Cyprus">Cyprus</option>
+    			<option value="Venice">Venice</option>
+  			</select>
+
+  			<br><br>
+
+  			<label for="contact"><b>Contact number</b></label>
+    		<input type="text" placeholder="Enter contact number" name="contact" required>
+
+    		<button type="submit" class="submit_btn" onclick="popup()">Submit</button>
+    		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  		</form>
+	</div>
+
+	<script>
+		function openForm() {
+  			document.getElementById("myForm").style.display = "block";
+		}
+
+		function closeForm() {
+  			document.getElementById("myForm").style.display = "none";
+		}
+
+		function popup() {
+  			alert("Thank you❤\nWe'll get in touch with you soon.");
+		}
+	</script>
+{% endblock content %}
+</html>
